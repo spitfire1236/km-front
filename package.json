@@ -1,0 +1,35 @@
+{
+    "name": "front",
+    "private": true,
+    "author": {
+        "name": "Alexey Chernyshev",
+        "url": "https://twitter.com/spitfiresuka"
+    },
+    "repository": "git@bitbucket.org:contentmarket/front.git",
+    "license": "MIT",
+    "scripts": {
+        "lint": "eslint ."
+    },
+    "workspaces": [
+        "packages/*"
+    ],
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.{js,md}": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "devDependencies": {
+        "eslint": "^5.13.0",
+        "husky": "^1.3.1",
+        "lerna": "^3.10.7",
+        "lint-staged": "^8.1.3",
+        "stylelint": "^9.10.1",
+        "stylelint-scss": "^3.5.3"
+    }
+}
