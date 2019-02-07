@@ -3,7 +3,7 @@
 ## Установка
 
 ```bash
-npm install stylelint-config-recommended --save-dev
+yarn add stylelint-config-km --dev
 ```
 
 ## Использование
@@ -12,6 +12,6 @@ npm install stylelint-config-recommended --save-dev
 
 ```json
 {
-  "extends": "stylelint-config-km"
+    "extends": "stylelint-config-km"
 }
 ```
