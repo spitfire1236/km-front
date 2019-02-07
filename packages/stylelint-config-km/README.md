@@ -15,3 +15,11 @@ yarn add stylelint-config-km --dev
     "extends": "stylelint-config-km"
 }
 ```
+
+## Использование SaSS
+
+```json
+{
+    "extends": "stylelint-config-km/scss"
+}
+```

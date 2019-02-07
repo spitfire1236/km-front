@@ -5,7 +5,6 @@
         "name": "Alexey Chernyshev",
         "url": "https://twitter.com/spitfiresuka"
     },
-    "repository": "git@bitbucket.org:contentmarket/front.git",
     "license": "MIT",
     "scripts": {
         "lint": "eslint ."

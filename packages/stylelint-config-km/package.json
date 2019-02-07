@@ -5,11 +5,12 @@
         "name": "Alexey Chernyshev",
         "url": "https://twitter.com/spitfiresuka"
     },
-    "repository": "git@bitbucket.org:contentmarket/front.git",
+    "repository": "git@github.com:spitfire77/kontentmarket-front.git",
     "license": "MIT",
     "main": "index.js",
     "files": [
-        "index.js"
+        "index.js",
+        "scss.js"
     ],
     "scripts": {
         "test": "stylelint ./test/*.css --config index.js",
