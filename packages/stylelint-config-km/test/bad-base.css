@@ -35,3 +35,36 @@
 }
 /* too close */
 .ListingCard__title { }
+
+a {
+}
+
+a.foo::before {
+    margin: 0;
+}
+
+a::not-my-pseudo-element {
+}
+
+@media (max-width: 50em) {
+}
+
+a {
+    color: #fff;
+}
+
+a {
+    font-family: Times New Roman, Times, serif;
+}
+
+a {
+} /*comment*/
+
+@media (width>=600px) {
+}
+
+a {
+    color: pink;
+}
+/** ↑
+ * This newline */

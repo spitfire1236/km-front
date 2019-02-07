@@ -50,3 +50,14 @@
 .ListingCard__title { }
 
 .ListingCard__content--alternative { }
+/* This type selector is qualifying the class */
+input[type='button'] {
+    margin: 0;
+}
+
+@media (min-width: 50em) {
+}
+
+a {
+    color: #fff;
+}
