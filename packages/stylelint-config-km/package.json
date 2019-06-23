@@ -5,7 +5,8 @@
         "name": "Alexey Chernyshev",
         "url": "https://twitter.com/spitfiresuka"
     },
-    "repository": "git@github.com:spitfire77/kontentmarket-front.git",
+    "description": "KM stylelint config, following our styleguide",
+    "repository": "git@github.com:spitfire77/km-front.git",
     "license": "MIT",
     "main": "index.js",
     "files": [
@@ -13,8 +14,7 @@
         "scss.js"
     ],
     "scripts": {
-        "test": "stylelint ./test/*.css --config index.js",
-        "test:scss": "stylelint ./test/*.scss --config scss.js"
+        "test": "stylelint ./test/*.css --config index.js"
     },
     "keywords": [
         "km",
@@ -25,11 +25,10 @@
         "stylelint-config-km"
     ],
     "dependencies": {
-        "stylelint-config-recommended": "^2.1.0",
-        "stylelint-prettier": "^1.0.6"
+        "stylelint-config-recommended": "^2.2.0",
+        "stylelint-prettier": "^1.1.1"
     },
     "peerDependencies": {
-        "stylelint": "^8.3.0 || ^9.0.0",
-        "stylelint-prettier": "^1.0.6"
+        "stylelint": "^8.3.0 || ^9.0.0 || ^10.0.0"
     }
 }

@@ -1,63 +1,91 @@
-
 /* quotes */
-.icon:before {
-  content: "\3e";
+
+.icon::before {
+    content: '\3e';
 }
-
-
 /* spacing */
+
 .avatar {
-  line-height: .75;
-  border: 2px solid white;
+    line-height: 0.75;
+    border: 2px solid #fff;
 }
 
 .name {
-  border: 0;
+    border: 0;
 }
-
-
 /* multiple selectors */
+
 .yes,
 .sure,
-.good { }
-
-
+.good {
+    display: block;
+}
 /* @-rules */
+
 @media print {
-  background: pink;
+    background: #fff;
 }
 
 @media (min-width: 768px) {
-  font-size: 18px;
+    font-size: 18px;
 }
-
-
 /* comments */
+
 .ListingCard--featured {
-  /* something fancy */
-  background: pink;
+    /* something fancy */
+    background: #fff;
+}
+/* ^ empty line */
+
+.ListingCard__title {
+    display: block;
+}
+/* OOCSS and BEM selectors */
+
+.ListingCard {
+    display: block;
 }
 
-/* ^ empty line */
-.ListingCard__title { }
-
-
-/* OOCSS and BEM selectors */
-.ListingCard { }
-
-.ListingCard--featured { }
-
-.ListingCard__title { }
-
-.ListingCard__content--alternative { }
+.ListingCard__content--alternative {
+    display: block;
+}
 /* This type selector is qualifying the class */
+
 input[type='button'] {
     margin: 0;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 50rem) {
+    .test {
+        display: block;
+    }
 }
 
 a {
-    color: #fff;
+    --foo: #000;
+    --bar: #fff;
+    color: var(--foo);
+}
+
+.col {
+    padding: 0 var(--base-column-gap);
+    box-sizing: border-box;
+    flex: 0 0 100%;
+    max-width: 100%;
+
+    @media (--viewport-tablet) {
+        flex: 0 0 91.66666%;
+        max-width: 91.66666%;
+    }
+
+    &.small {
+        display: none;
+
+        @media (--viewport-tablet) {
+            display: block;
+            margin-top: 125px;
+            flex: 0 0 8.333333%;
+            max-width: 8.333333%;
+        }
+    }
 }

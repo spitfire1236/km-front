@@ -16,7 +16,7 @@ yarn add stylelint-config-km --dev
 }
 ```
 
-## Использование SaSS
+## Использование Sass(in progress)
 
 ```json
 {
