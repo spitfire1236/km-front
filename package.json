@@ -10,6 +10,9 @@
         "lint": "eslint .",
         "test": "lerna run test"
     },
+    "publishConfig": {
+        "access": "public"
+    },
     "workspaces": [
         "packages/*"
     ],
