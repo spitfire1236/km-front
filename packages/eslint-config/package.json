@@ -29,6 +29,9 @@
             "path": "cz-conventional-changelog"
         }
     },
+    "clean-publish": {
+        "packageManager": "yarn"
+    },
     "devDependencies": {
         "clean-publish": "^2.0.0",
         "commitizen": "^4.2.2",
