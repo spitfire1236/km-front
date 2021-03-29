@@ -1,0 +1,47 @@
+{
+    "name": "@kontent-market/eslint-config",
+    "version": "1.0.0",
+    "description": "kontent market ESlint config",
+    "author": "Alexey Chernyshev <er1x4ever@gmail.com>",
+    "homepage": "https://github.com/spitfire77/km-front#readme",
+    "license": "MIT",
+    "main": "index.js",
+    "files": [
+        "index.js",
+        "react.js",
+        "README.md",
+        "rules"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/spitfire77/km-front.git",
+        "directory": "packages/eslint-config"
+    },
+    "scripts": {
+        "publish": "clean-publish",
+        "release": "yarn standard-version -t @kontent-market/eslint-config@"
+    },
+    "bugs": {
+        "url": "https://github.com/spitfire77/km-front/issues"
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
+    },
+    "devDependencies": {
+        "clean-publish": "^2.0.0",
+        "commitizen": "^4.2.2",
+        "cz-conventional-changelog": "^3.3.0",
+        "standard-version": "^9.0.0"
+    },
+    "peerDependencies": {
+        "babel-eslint": "^10",
+        "eslint": "^7.2",
+        "eslint-config-prettier": "^8",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-react": "^7.23",
+        "eslint-plugin-react-hooks": "^4",
+        "eslint-plugin-unicorn": "^29"
+    }
+}
