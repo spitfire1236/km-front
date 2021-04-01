@@ -2,41 +2,33 @@
     "name": "@kontent-market/eslint-config",
     "version": "1.0.1",
     "description": "kontent market ESlint config",
-    "author": "Alexey Chernyshev <er1x4ever@gmail.com>",
     "homepage": "https://github.com/spitfire77/km-front#readme",
+    "bugs": {
+        "url": "https://github.com/spitfire77/km-front/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/spitfire77/km-front.git",
+        "directory": "packages/eslint-config"
+    },
     "license": "MIT",
-    "main": "index.js",
+    "author": "Alexey Chernyshev <er1x4ever@gmail.com>",
     "files": [
         "index.js",
         "react.js",
         "README.md",
         "rules"
     ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/spitfire77/km-front.git",
-        "directory": "packages/eslint-config"
-    },
     "scripts": {
-        "publish": "clean-publish",
-        "release": "yarn standard-version -t @kontent-market/eslint-config@"
-    },
-    "bugs": {
-        "url": "https://github.com/spitfire77/km-front/issues"
+        "release": "clean-publish --access public"
     },
     "config": {
         "commitizen": {
             "path": "cz-conventional-changelog"
         }
     },
-    "clean-publish": {
-        "packageManager": "yarn"
-    },
     "devDependencies": {
-        "clean-publish": "^2.0.0",
-        "commitizen": "^4.2.2",
-        "cz-conventional-changelog": "^3.3.0",
-        "standard-version": "^9.0.0"
+        "clean-publish": "^2.0.0"
     },
     "peerDependencies": {
         "babel-eslint": "^10",
@@ -46,5 +38,8 @@
         "eslint-plugin-react": "^7.23",
         "eslint-plugin-react-hooks": "^4",
         "eslint-plugin-unicorn": "^29"
+    },
+    "clean-publish": {
+        "packageManager": "yarn"
     }
 }

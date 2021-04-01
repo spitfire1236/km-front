@@ -3,5 +3,6 @@
     "singleQuote": true,
     "semi": true,
     "tabWidth": 4,
-    "useTabs": false
+    "useTabs": false,
+    "plugins": ["./node_modules/prettier-plugin-packagejson"]
 }

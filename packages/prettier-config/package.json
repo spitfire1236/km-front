@@ -2,34 +2,29 @@
     "name": "@kontent-market/prettier-config",
     "version": "1.0.2",
     "description": "kontent market Prettier config",
-    "author": "Alexey Chernyshev <er1x4ever@gmail.com>",
     "homepage": "https://github.com/spitfire77/km-front/#readme",
+    "bugs": {
+        "url": "https://github.com/spitfire77/km-front/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/spitfire77/km-front.git",
+        "directory": "packages/prettier-config"
+    },
     "license": "MIT",
+    "author": "Alexey Chernyshev <er1x4ever@gmail.com>",
     "main": "index.json",
     "files": [
         "index.json",
         "README.md"
     ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/spitfire77/km-front.git"
-    },
     "scripts": {
-        "publish": "clean-publish",
-        "release": "yarn standard-version -t @kontent-market/prettier-config@"
-    },
-    "bugs": {
-        "url": "https://github.com/spitfire77/km-front/issues"
+        "release": "clean-publish --access public"
     },
     "devDependencies": {
-        "commitizen": "^4.2.2",
-        "cz-conventional-changelog": "^3.3.0",
-        "standard-version": "^9.0.0",
         "clean-publish": "^2.0.0"
     },
-    "config": {
-        "commitizen": {
-            "path": "cz-conventional-changelog"
-        }
+    "clean-publish": {
+        "packageManager": "yarn"
     }
 }

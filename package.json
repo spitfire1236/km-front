@@ -1,21 +1,19 @@
 {
     "name": "front",
     "private": true,
+    "license": "MIT",
     "author": {
         "name": "Alexey Chernyshev",
         "url": "https://twitter.com/spitfiresuka"
     },
-    "license": "MIT",
-    "scripts": {
-        "lint": "eslint .",
-        "test": "lerna run test"
-    },
-    "publishConfig": {
-        "access": "public"
-    },
     "workspaces": [
         "packages/*"
     ],
+    "scripts": {
+        "lint": "eslint .",
+        "test": "lerna run test",
+        "cm": "cz"
+    },
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
@@ -27,13 +25,24 @@
             "git add"
         ]
     },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
+    },
     "devDependencies": {
+        "commitizen": "^4.2.2",
+        "cz-conventional-changelog": "^3.3.0",
         "eslint": "^6.0.0",
         "eslint-config-prettier": "^5.0.0",
         "husky": "^2.4.1",
         "lerna": "^3.15.0",
         "lint-staged": "^8.2.1",
         "prettier": "^1.18.2",
+        "prettier-plugin-packagejson": "^2.2.10",
         "stylelint": "^10.1.0"
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
