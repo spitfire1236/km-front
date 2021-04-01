@@ -1,20 +1,19 @@
-# `@km/prettier-config`
+# `@kontent-market/prettier-config`
 
-> kontent market [Prettier](https://prettier.io) config.
+[![NPM version](https://img.shields.io/npm/v/@kontent-market/prettier-config.svg)](https://www.npmjs.org/package/@kontent-market/prettier-config)
+
+> kontent market shareable config for [Prettier](https://prettier.io)
+
+## Installation
+
+```console
+$ yarn add @kontent-market/prettier-config --dev
+```
 
 ## Usage
 
-**Install**:
-
-```bash
-$ yarn add --dev @kontent-market/prettier-config
-```
-
-**Edit `package.json`**:
-
-```jsonc
+```json
 {
-    // ...
     "prettier": "@kontent-market/prettier-config"
 }
 ```
