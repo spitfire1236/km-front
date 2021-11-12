@@ -1,11 +1,12 @@
 {
-  "name": "tpl-loader",
+  "name": "@kontent-market/tpl-loader",
   "version": "1.0.0",
   "description": "Underscore HTML Templates loader for webpack",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:spitfire77/km-front.git"
+    "url": "git@github.com:spitfire77/km-front.git",
+    "directory": "packages/tpl-loader"
   },
   "keywords": [
     "ejs",
@@ -29,11 +30,12 @@
     "loader-utils": "^0.2.12"
   },
   "devDependencies": {
+    "clean-publish": "^2.0.0",
     "mocha": "2.3.x",
     "should": "8.1.x",
     "lodash": "*"
   },
-  "scripts": {
-    "test": "mocha --reporter spec"
+  "clean-publish": {
+    "packageManager": "yarn"
   }
 }
