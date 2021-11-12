@@ -5,7 +5,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/spitfire1236/km-front/tree/master/packages/tpl-loader.git"
+    "url": "git@github.com:spitfire77/km-front.git"
   },
   "keywords": [
     "ejs",
