@@ -26,7 +26,8 @@
     "lodash": "*"
   },
   "scripts": {
-    "release": "clean-publish --access public"
+    "release": "clean-publish --access public",
+    "test": "mocha --reporter spec"
   },
   "config": {
     "commitizen": {
