@@ -1,4 +1,4 @@
-# 12.11.2021
+# 1.0.2
 
 -   fix bug of origin package:
     17: this.query = '?' + JSON.stringify(query);
