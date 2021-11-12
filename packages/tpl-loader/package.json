@@ -1,50 +1,50 @@
 {
-  "name": "@kontent-market/tpl-loader",
-  "version": "1.0.0",
-  "description": "Underscore HTML Templates loader for webpack",
-  "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:spitfire77/km-front.git",
-    "directory": "packages/tpl-loader"
-  },
-  "keywords": [
-    "ejs",
-    "underscrore",
-    "lodash",
-    "_",
-    "webpack",
-    "loader",
-    "template"
-  ],
-  "author": {
-    "name": "Jan Nicklas",
-    "email": "j.nicklas@me.com"
-  },
-  "license": "MIT",
-  "peerDependencies": {
-    "lodash": "*"
-  },
-  "scripts": {
-    "release": "clean-publish --access public",
-    "test": "mocha --reporter spec"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
+    "name": "@kontent-market/tpl-loader",
+    "version": "1.0.2",
+    "description": "Underscore HTML Templates loader for webpack",
+    "keywords": [
+        "ejs",
+        "underscrore",
+        "lodash",
+        "_",
+        "webpack",
+        "loader",
+        "template"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:spitfire77/km-front.git",
+        "directory": "packages/tpl-loader"
+    },
+    "license": "MIT",
+    "author": {
+        "name": "Jan Nicklas",
+        "email": "j.nicklas@me.com"
+    },
+    "main": "index.js",
+    "scripts": {
+        "release": "clean-publish --access public",
+        "test": "mocha --reporter spec"
+    },
+    "config": {
+        "commitizen": {
+            "path": "cz-conventional-changelog"
+        }
+    },
+    "dependencies": {
+        "html-loader": "^0.4.0",
+        "loader-utils": "^0.2.12"
+    },
+    "devDependencies": {
+        "clean-publish": "^2.0.0",
+        "lodash": "*",
+        "mocha": "2.3.x",
+        "should": "8.1.x"
+    },
+    "peerDependencies": {
+        "lodash": "*"
+    },
+    "clean-publish": {
+        "packageManager": "yarn"
     }
-  },
-  "dependencies": {
-    "html-loader": "^0.4.0",
-    "loader-utils": "^0.2.12"
-  },
-  "devDependencies": {
-    "clean-publish": "^2.0.0",
-    "mocha": "2.3.x",
-    "should": "8.1.x",
-    "lodash": "*"
-  },
-  "clean-publish": {
-    "packageManager": "yarn"
-  }
 }
