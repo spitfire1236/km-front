@@ -1,0 +1,39 @@
+{
+  "name": "tpl-loader",
+  "version": "1.0.0",
+  "description": "Underscore HTML Templates loader for webpack",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spitfire1236/km-front/tree/master/packages/tpl-loader.git"
+  },
+  "keywords": [
+    "ejs",
+    "underscrore",
+    "lodash",
+    "_",
+    "webpack",
+    "loader",
+    "template"
+  ],
+  "author": {
+    "name": "Jan Nicklas",
+    "email": "j.nicklas@me.com"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "lodash": "*"
+  },
+  "dependencies": {
+    "html-loader": "^0.4.0",
+    "loader-utils": "^0.2.12"
+  },
+  "devDependencies": {
+    "mocha": "2.3.x",
+    "should": "8.1.x",
+    "lodash": "*"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  }
+}
